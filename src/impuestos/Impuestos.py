@@ -10,9 +10,11 @@ class Impuestos:
         return self.impuestos
     def añadir (self, impuesto: Impuesto) -> None:
         self.impuestos.append(impuesto)
+
     def recuperar (self, impuestoId: int) -> Impuesto:
         for impuesto in self.impuestos:
-            return impuesto
+            if impuesto.id ==impuestoId:
+                return impuesto
 
         raise Exception (f'No existe el impuesto con id {impuestoId}')
 

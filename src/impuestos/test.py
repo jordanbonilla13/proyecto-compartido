@@ -12,7 +12,7 @@ iva_normal_anterior = Impuesto (
 iva_superreducido_actual = Impuesto(
 3, ' IVA superreducido', 4.0 , date (2012,9,1))
 
-iva_normal_actual = Impuestos (4,' IVA normal', 21.0, date (2012,9,1))
+iva_normal_actual = Impuesto (4,' IVA normal', 21.0, date (2012,9,1))
 
 print(iva_superreducido_anterior)
 print(iva_normal_anterior)
